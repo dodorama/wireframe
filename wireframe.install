@@ -29,7 +29,9 @@ function wireframe_install() {
   variable_set('pathauto_punctuation_underscore', '1');
   variable_set('site_frontpage', 'projects');
   variable_set('image_jpeg_quality', '100');
-  variable_set('menu_options_project', array());
+  variable_set('menu_options_project', '');
+  variable_set('node_preview_project', 0);
+  variable_set('node_preview_page', 0);
   // Enable flippy pager for Project content type
   variable_set('flippy_project', 1);
 }
@@ -204,7 +206,7 @@ function wireframe_create_default_text_formats() {
   
   // Enable default permissions for system roles.
   $filtered_html_permission = filter_permission_name($filtered_html_format);
-  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content', 'access site wide contact form', $filtered_html_permission));
+  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content', 'access site-wide contact form', $filtered_html_permission));
   user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content', $filtered_html_permission));
 
 }
@@ -352,12 +354,12 @@ function wireframe_create_default_node_types () {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'type' => 'plain_text',
+        'type' => 'text_plain',
         'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'type' => 'plain_text',
+        'type' => 'text_plain',
         'weight' => 5,
       ),
     ),
@@ -830,9 +832,6 @@ function wireframe_create_default_nodes () {
   
   $node->title    = 'About';
   $node->language = LANGUAGE_NONE;
-
-  $node->field_body[$node->language][0]['value']   = $body_text;
-  $node->field_body[$node->language][0]['format']  = 'filtered_html';
   
   $path = 'about';
   $node->path = array('alias' => $path);

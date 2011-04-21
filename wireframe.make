@@ -36,6 +36,7 @@ projects[views][subdir] = contrib
 
 projects[flippy][subdir] = contrib
 projects[flippy][version]= 1.x-dev
+projects[flippy][patch][] = "http://drupal.org/files/issues/flippy.patch"
 
 ; projects[date][subdir] = contrib
 
