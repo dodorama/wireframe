@@ -1,5 +1,5 @@
 core = 7.x
-projects[drupal] = 7
+projects[drupal][version] = 7
 
 ; Themes
 projects[] = tao
