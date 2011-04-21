@@ -77,7 +77,6 @@ function wireframe_create_default_roles_perms() {
 }
 
 function wireframe_enable_default_themes () {
-  // Enable the admin theme.
   db_update('system')
     ->fields(array('status' => 0))
     ->condition('type', 'theme')
@@ -91,7 +90,7 @@ function wireframe_enable_default_themes () {
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
-    ->condition('name', 'wire')
+    ->condition('name', 'helvis')
     ->execute();
   db_update('system')
     ->fields(array('status' => 0))
@@ -99,7 +98,7 @@ function wireframe_enable_default_themes () {
     ->condition('name', 'bartik')
     ->execute();
   variable_set('admin_theme', 'rubik');
-  variable_set('theme_default', 'wire');
+  variable_set('theme_default', 'helvis');
   variable_set('node_admin_theme', '1');
 }
 

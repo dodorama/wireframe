@@ -8,6 +8,9 @@ projects[] = wireframe
 projects[wire][type] = theme
 projects[wire][download][type] = "git"
 projects[wire][download][url] = "git@github.com:dodorama/wire.git"
+projects[helvis][type] = theme
+projects[helvis][download][type] = "git"
+projects[helvis][download][url] = "git@github.com:dodorama/helvis.git"
 
 ; Helper modules
 
