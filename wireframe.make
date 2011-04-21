@@ -4,7 +4,6 @@ api = 2
 ; Themes
 projects[] = tao
 projects[] = rubik
-projects[] = wireframe
 projects[wire][type] = theme
 projects[wire][download][type] = "git"
 projects[wire][download][url] = "git@github.com:dodorama/wire.git"
@@ -36,7 +35,7 @@ projects[pathauto][subdir] = contrib
 projects[views][subdir] = contrib
 
 projects[flippy][subdir] = contrib
-projects[flippy][version]=7.x-1.x-dev
+projects[flippy][version]= 1.x-dev
 
 ; projects[date][subdir] = contrib
 
