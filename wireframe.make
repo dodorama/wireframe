@@ -1,4 +1,4 @@
-core = 7.x
+core = 7.0
 
 ; Themes
 projects[] = tao
