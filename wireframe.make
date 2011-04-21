@@ -1,4 +1,4 @@
-core = 7.0
+core = 7.x
 api = 2
 
 ; Themes
@@ -36,6 +36,7 @@ projects[pathauto][subdir] = contrib
 projects[views][subdir] = contrib
 
 projects[flippy][subdir] = contrib
+projects[flippy][version]=7.x-1.x-dev
 
 ; projects[date][subdir] = contrib
 
