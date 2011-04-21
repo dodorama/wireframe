@@ -1,5 +1,3 @@
-projects[drupal][version] = 7
-
 ; Themes
 projects[] = tao
 projects[] = rubik
