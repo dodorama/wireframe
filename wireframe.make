@@ -1,4 +1,6 @@
 core = 7.0
+projects[drupal][version] = 7
+api = 2
 
 ; Themes
 projects[] = tao
