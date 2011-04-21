@@ -1,0 +1,53 @@
+name = Wireframe
+description = Install with standard features pre-configured.
+
+version = VERSION
+core = 7.x
+
+
+; Core
+
+dependencies[] = block
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = shortcut
+dependencies[] = toolbar
+dependencies[] = overlay
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+dependencies[] = contact
+dependencies[] = php
+
+
+; Contrib
+
+dependencies[] = token
+dependencies[] = transliteration
+dependencies[] = ctools
+dependencies[] = pathauto
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = flippy
+# dependencies[] = date
+# dependencies[] = node_reference
+
+; Devel
+
+dependencies[] = backup_migrate
+dependencies[] = devel
+
+; Custom
+
+dependencies[] = wireframe_portfolio
+
+files[] = wireframe.profile
+
