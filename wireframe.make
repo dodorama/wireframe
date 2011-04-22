@@ -42,6 +42,7 @@ projects[flippy][patch][] = "http://drupal.org/files/issues/flippy.patch"
 
 ; Custom modules
 
+projects[wireframe_portfolio][subdir] = custom
 projects[wireframe_portfolio][type] = module
 projects[wireframe_portfolio][download][type] = "git"
 projects[wireframe_portfolio][download][url] = "git@github.com:dodorama/wireframe_portfolio.git"
