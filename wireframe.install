@@ -29,7 +29,7 @@ function wireframe_install() {
   variable_set('pathauto_punctuation_underscore', '1');
   variable_set('site_frontpage', 'projects');
   variable_set('image_jpeg_quality', '100');
-  variable_set('menu_options_project', '');
+  variable_set('menu_options_project', ' ');
   variable_set('node_preview_project', 0);
   variable_set('node_preview_page', 0);
   // Enable flippy pager for Project content type
@@ -354,12 +354,12 @@ function wireframe_create_default_node_types () {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'type' => 'text_plain',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'type' => 'text_plain',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 5,
       ),
     ),
